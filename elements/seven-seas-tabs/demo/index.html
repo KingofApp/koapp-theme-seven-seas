@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+  <head>
+    <title>seven-seas-tabs demo</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+    <script src="../../../../../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../../../../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../../../../bower_components/iron-flex-layout/iron-flex-layout.html">
+    <link rel="import" href="../../seven-seas-toolbar/seven-seas-toolbar.html">
+    <link rel="import" href="../seven-seas-tab.html">
+    <link rel="import" href="../seven-seas-tabs.html">
+
+    <style is="custom-style" include="demo-pages-shared-styles">
+      #container {
+        max-width: 600px;
+      }
+
+      .vertical-section {
+        margin: 0 0 40px;
+      }
+    </style>
+  </head>
+  <body unresolved>
+    <div id="container" class="vertical-section-container centered">
+      <h3>Plain <code>seven-seas-tabs</code>.</h3>
+      <div class="vertical-section">
+        <seven-seas-tabs selected="0">
+          <seven-seas-tab>ITEM ONE</seven-seas-tab>
+          <seven-seas-tab>ITEM TWO</seven-seas-tab>
+          <seven-seas-tab>ITEM THREE</seven-seas-tab>
+        </seven-seas-tabs>
+      </div>
+
+      <h3>
+        The <code>scrollable</code> attribute causes the tabs to scroll, rather
+        than compress, when there is not enough space. Arrow buttons appear when
+        any of the tabs are not completely visible.
+      </h3>
+      <div class="vertical-section">
+        <seven-seas-tabs selected="0" scrollable>
+          <seven-seas-tab>NUMBER ONE ITEM</seven-seas-tab>
+          <seven-seas-tab>ITEM TWO</seven-seas-tab>
+          <seven-seas-tab>THE THIRD ITEM</seven-seas-tab>
+          <seven-seas-tab>THE ITEM FOUR</seven-seas-tab>
+          <seven-seas-tab>FIFTH</seven-seas-tab>
+          <seven-seas-tab>THE SIXTH TAB</seven-seas-tab>
+          <seven-seas-tab>NUMBER SEVEN</seven-seas-tab>
+          <seven-seas-tab>EIGHT</seven-seas-tab>
+          <seven-seas-tab>NUMBER NINE</seven-seas-tab>
+          <seven-seas-tab>THE TENTH</seven-seas-tab>
+          <seven-seas-tab>THE ITEM ELEVEN</seven-seas-tab>
+          <seven-seas-tab>TWELFTH ITEM</seven-seas-tab>
+        </seven-seas-tabs>
+      </div>
+
+      <h3>
+        Tab layout is effected by the writing direction of the surrounding area.
+      </h3>
+      <div class="vertical-section">
+        <div dir="rtl">
+          <seven-seas-tabs selected="0">
+            <seven-seas-tab>ITEM ONE</seven-seas-tab>
+            <seven-seas-tab>ITEM TWO</seven-seas-tab>
+            <seven-seas-tab>ITEM THREE</seven-seas-tab>
+          </seven-seas-tabs>
+          &nbsp;
+          <seven-seas-tabs selected="0" scrollable>
+            <seven-seas-tab>NUMBER ONE ITEM</seven-seas-tab>
+            <seven-seas-tab>ITEM TWO</seven-seas-tab>
+            <seven-seas-tab>THE THIRD ITEM</seven-seas-tab>
+            <seven-seas-tab>THE ITEM FOUR</seven-seas-tab>
+            <seven-seas-tab>FIFTH</seven-seas-tab>
+            <seven-seas-tab>THE SIXTH TAB</seven-seas-tab>
+            <seven-seas-tab>NUMBER SEVEN</seven-seas-tab>
+            <seven-seas-tab>EIGHT</seven-seas-tab>
+            <seven-seas-tab>NUMBER NINE</seven-seas-tab>
+            <seven-seas-tab>THE TENTH</seven-seas-tab>
+            <seven-seas-tab>THE ITEM ELEVEN</seven-seas-tab>
+            <seven-seas-tab>TWELFTH ITEM</seven-seas-tab>
+          </seven-seas-tabs>
+        </div>
+      </div>
+
+      <h3>
+        Tabs can be used in a <code>seven-seas-toolbar</code>.
+      </h3>
+      <div class="vertical-section">
+        <style is="custom-style">
+          .self-end {
+            /* This mixin (from iron-flex-layout) aligns the tabs to the
+               bottom of the toolbar. */
+            @apply(--layout-self-end);
+          }
+        </style>
+
+        <seven-seas-toolbar class="tall">
+          <seven-seas-tabs selected="0" class="bottom self-end" style="width: 300px;">
+            <seven-seas-tab>ITEM ONE</seven-seas-tab>
+            <seven-seas-tab>ITEM TWO</seven-seas-tab>
+          </seven-seas-tabs>
+        </seven-seas-toolbar>
+      </div>
+    </div>
+  </body>
+</html>

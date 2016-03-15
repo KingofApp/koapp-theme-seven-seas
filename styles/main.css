@@ -1,0 +1,33 @@
+/* General styles */
+
+.module {
+  padding: 10px;
+}
+
+.module .module {
+  padding: 0;
+}
+
+.module > a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+
+.module > a + a,
+seven-seas-card + seven-seas-card {
+  margin-top: 15px;
+}
+
+seven-seas-card {
+  max-width: 100%;
+}
+
+form {
+  margin: 15px;
+}
+
+form seven-seas-button {
+  float: right;
+  margin-top: 15px;
+}
