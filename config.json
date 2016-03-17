@@ -20,13 +20,13 @@
     "market": true
   },
   "images" : {
-    "list" : "images/list.png",
+    "list" : "themes/koapp-theme-seven-seas/images/list.png",
     "screenshots" : [
-      "images/screenshot01.png",
-      "images/screenshot02.png"
+      "themes/koapp-theme-seven-seas/images/screenshot01.png",
+      "themes/koapp-theme-seven-seas/images/screenshot02.png"
     ],
-    "popover" : "images/popover.png",
-    "banner" : "images/banner.png"
+    "popover" : "themes/koapp-theme-seven-seas/images/popover.png",
+    "banner" : "themes/koapp-theme-seven-seas/images/banner.png"
   },
   "defaultConfig": {
     "colors": {
