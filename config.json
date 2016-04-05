@@ -1,0 +1,64 @@
+{
+  "name": "Seven Seas",
+  "identifier": "koapp-theme-seven-seas",
+  "description": {
+    "en-US" : "",
+    "es-ES" : "Plantilla basada en las guías de diseño de Material Design"
+  },
+  "version": "1.0.0",
+  "author": "King of App",
+  "category": [
+    "material-design"
+  ],
+  "price": 0,
+  "platforms": [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "showOn": {
+    "market": true
+  },
+  "images" : {
+    "list" : "themes/koapp-theme-seven-seas/images/list.png",
+    "screenshots" : [
+      "themes/koapp-theme-seven-seas/images/screenshot01.png",
+      "themes/koapp-theme-seven-seas/images/screenshot02.png"
+    ],
+    "popover" : "themes/koapp-theme-seven-seas/images/popover.png",
+    "banner" : "themes/koapp-theme-seven-seas/images/banner.png"
+  },
+  "defaultConfig": {
+    "colors": {
+      "primaryTextColor": "#585e62",
+      "primaryBackgroundColor": "#ffffff",
+      "secondaryTextColor": "#585e62",
+      "disabledTextColor": "#274c4c",
+      "dividerColor": "#e0e0e0",
+      "primaryColor": "#3d6868",
+      "lightPrimaryColor": "#c5cae9",
+      "darkPrimaryColor": "#3d6868",
+      "accentColor": "#ff4081",
+      "lightAccentColor": "#ff4081",
+      "darkAccentColor": "#ff4081",
+      "errorColor": "#dd2c00",
+      "backgroundColor": "#f0f2dd"
+    },
+    "images": {
+      "background": ""
+    },
+    "fonts": {
+      "primaryFontFamily": {
+        "name": "Lato",
+        "url": "https://fonts.googleapis.com/css?family=Lato"
+      },
+      "titleFontFamily": {
+        "name": "Lustria",
+        "url": "https://fonts.googleapis.com/css?family=Lustria"
+      }
+    },
+    "menu": "polymermenu"
+  },
+  "subscription": false,
+  "main": "themes/koapp-theme-seven-seas/koapp-theme-seven-seas.html"
+}
